@@ -7,8 +7,8 @@ http.createServer((req,res) => {
     if (req.url == '/fileupload') {
         let form = new formidable.IncomingForm();
         form.parse(req , (err,fields,files) => {
-            let oldpath = 'C:\Users\olarn\Downloads';
-            let newpath = 'C:\Khris Bharmmano\Study-Nodejs\img'
+            let oldpath = //Your Old Path
+            let newpath =  // Your New Path
             fs.rename(oldpath, newpath , (err) => {
                 if (err) throw err;
                 res.write('File Upload and moved');
