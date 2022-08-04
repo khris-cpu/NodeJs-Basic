@@ -9,9 +9,6 @@ http.createServer((req,res) => {
     })
 }).listen(2022);
 
-
-
-
 // Create File
 
 // fs.appendFile('mynewfile.txt' , 'Hello , World' , (err) => {
